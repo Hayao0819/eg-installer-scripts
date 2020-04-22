@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+name="Firefox"
+package_name="firefox"
+description="Mozilla製の高速で動作するウェブブラウザ"
+run_preparing=false
+
+
+install () {
+    pacman -S --noconfirm ${package_name}
+}
+
+uninstall () {
+    pacman -Rsn --noconfirm ${package_name}
+}

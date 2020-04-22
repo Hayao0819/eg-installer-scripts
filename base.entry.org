@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+#-- 表示名 --#
+name=
+
+#-- パッケージ名 --#
+package_name=
+
+#-- 説明 --#
+description=
+
+#-- preparing関数を実行するかどうか --#
+run_preparing=true
+
+#-- preparing実行中のメッセージ --#
+preparing_msg=
+
+
+install () {
+    pacman -S --noconfirm ${package_name}
+}
+
+uninstall () {
+    pacman -Rsn --noconfirm ${package_name}
+}

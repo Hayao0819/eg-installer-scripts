@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+name="pinta"
+package_name="pinta"
+description="Paint.NETをモデルにした描画/編集プログラム"
+run_preparing=false
+
+
+install () {
+    pacman -S --noconfirm ${package_name}
+}
+
+uninstall () {
+    pacman -Rsn --noconfirm ${package_name}
+}
