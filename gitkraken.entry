@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #-- 表示名 --#
-name="Git Kraken"
+name="Git-Kraken"
 
 #-- パッケージ名 --#
 package_name="gitkraken"
